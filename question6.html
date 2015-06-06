@@ -1,0 +1,21 @@
+<html>
+<div id="yolo">
+  randomString
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+var arrString = ['apple','blue','red','fun'];
+
+$('#yolo').click(function() {
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+function randomString(strings) {
+  document.write(strings[randomNumber(0, 3)]);
+};
+
+randomString(arrString);
+});
+</script>
+</html>
